@@ -7,29 +7,19 @@ porter = PorterStemmer()
 lancaster = LancasterStemmer()
 snowball = SnowballStemmer('english')
 
-class PorterStemming():
-    def __init__(self, word):
-        self.word = word
-    
-    def reduce(self):
-        stemmed = porter.stem(self.word)
-        return stemmed
 
-class LancasterStemming():
-    def __init__(self, word):
-        self.word = word
-    
-    def reduce(self):
-        stemmed = lancaster.stem(self.word)
-        return stemmed
+def PorterStemming(word):
+    stemmed = porter.stem(word)
+    return stemmed
 
-class SnowballStemming():
-    def __init__(self, word):
-        self.word = word
+def LancasterStemming(word):
     
-    def reduce(self):
-        stemmed = snowball.stem(self.word)
-        return stemmed
+    stemmed = lancaster.stem(word)
+    return stemmed
+
+def SnowballStemming(word):
+  
+    stemmed = snowball.stem(word)
+    return stemmed
 
 
-    
