@@ -1,0 +1,21 @@
+{% load bootstrap3 %}
+<html>
+    <head>
+        <title>Text Processing</title>
+    </head>
+    <body>
+        <h1>Text Processing</h1>
+        <form method="post">
+            <div class="containe">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Process Text</button>
+        </form>
+        
+        {% if stemmed_content %}
+            <h2>Stemmed Content:</h2>
+            <p>{{ stemmed_content }}</p>
+        {% endif %}
+    </body>
+    </html>
+    

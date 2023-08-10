@@ -16,9 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-import views
 
+app_name = "ling_toolkits"
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(views.urls))
+    path('', include('ling_toolkits.urls'))
 ]

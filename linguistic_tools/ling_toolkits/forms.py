@@ -8,4 +8,9 @@ stemming_choices = (
 
 class Stemmer(forms.Form):
     content = forms.CharField(widget=forms.Textarea)
-    stemming_type = forms.CharField(choices=stemming_choices,widget=forms.RadioSelect)
+    stemming_type = forms.ChoiceField(choices=stemming_choices,widget=forms.RadioSelect)
+
+
+class FrequencyForm(forms.Form):
+    words = forms.CharField(widget=forms.Textarea)
+    

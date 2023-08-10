@@ -4,3 +4,7 @@ from django.db import models
 
 class TextData(models.Model):
     content = models.TextField()
+
+
+class Frequency(models.Model):
+    word = models.TextField()
