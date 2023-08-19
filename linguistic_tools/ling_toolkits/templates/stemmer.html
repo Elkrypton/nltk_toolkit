@@ -6,7 +6,8 @@
     <body>
         <h1>Text Processing</h1>
         <form method="post">
-            <div class="containe">
+            <div class="container">
+                {% bootstrap_form form %}
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit">Process Text</button>

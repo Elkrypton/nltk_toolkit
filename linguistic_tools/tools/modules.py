@@ -10,6 +10,7 @@ try:
     import time
     import pandas as pd
     import matplotlib.pyplot as plt
+    from nltk.probability import FreqDist
 
 except ImportError as err:
     print(":::ERROR IMPORTING MODULE:: {}".format(str(err)))

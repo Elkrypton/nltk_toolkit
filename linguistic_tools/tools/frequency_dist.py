@@ -1,6 +1,4 @@
-from nltk.probability import FreqDist
-from nltk.tokenize import word_tokenize 
-
+from modules import *
 
 
 class FrequencyDistribution():
