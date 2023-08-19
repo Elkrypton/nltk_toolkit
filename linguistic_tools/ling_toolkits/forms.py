@@ -13,4 +13,4 @@ class Stemmer(forms.Form):
 
 class FrequencyForm(forms.Form):
     words = forms.CharField(widget=forms.Textarea)
-    
+
