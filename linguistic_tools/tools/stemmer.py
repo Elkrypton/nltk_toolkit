@@ -1,12 +1,14 @@
-from nltk.stem.lancaster import LancasterStemmer
-from nltk.stem.porter import PorterStemmer
-from nltk.stem.snowball import SnowballStemmer
 
 
 porter = PorterStemmer()
 lancaster = LancasterStemmer()
 snowball = SnowballStemmer('english')
+lmr = WordNetLemmatizer()
 
+
+def Lemmatize(word):
+    lemma = lmr.lemmaize(word)
+    return lemma
 
 def PorterStemming(word):
     stemmed = porter.stem(word)

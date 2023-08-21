@@ -1,4 +1,5 @@
 try:
+
     from nltk.stem import WordNetLemmatizer
     from nltk.tokenize import word_tokenize
     from nltk.corpus import stopwords
@@ -11,6 +12,12 @@ try:
     import pandas as pd
     import matplotlib.pyplot as plt
     from nltk.probability import FreqDist
+    from nltk.stem.lancaster import LancasterStemmer
+    from nltk.stem.porter import PorterStemmer
+    from nltk.stem.snowball import SnowballStemmer
+
 
 except ImportError as err:
     print(":::ERROR IMPORTING MODULE:: {}".format(str(err)))
+    print("::: FIX THE PROBLEM EITHER WITH INSTALLING, REINSTALLING OR UPDATING THE MODULE::")
+    

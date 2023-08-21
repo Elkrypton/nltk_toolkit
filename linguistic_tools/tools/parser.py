@@ -3,6 +3,8 @@ from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.tag import pos_tag
 import nltk
 
+
+def create_custom_parse()
 #load the parser
 parser = Parser()
 

@@ -17,10 +17,3 @@ class AdvancedSentimentAnalyzer():
             for k in kvp:
                 print("{} -- {}".format(k,kvp[k]), '\n')
             print()
-
-if __name__ == "__main__":
-    sentences = ["worldwar is crazy", "Struggle us real as has been said by my old colleague"]
-    analyze = AdvancedSentimentAnalyzer(sentences)
-    analyze.Analyze()
-    
-    
